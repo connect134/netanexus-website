@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
+   <section className="relative min-h-[100svh] flex items-center justify-center pt-20 pb-32 overflow-hidden">
       {/* Background Image - Malaysia Skyline (Petronas Towers/KL) */}
       <div 
         className="absolute inset-0 z-0 opacity-70"
@@ -85,7 +85,7 @@ export default function Hero() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1, duration: 1 }}
-        className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
+        className="absolute bottom-10 left-1/2 -translate-x-1/2 hidden md:flex flex-col items-center gap-2 pointer-events-none"
       >
         <span className="text-xs font-medium uppercase tracking-widest text-muted">Scroll</span>
         <div className="w-[1px] h-12 bg-border relative overflow-hidden">
